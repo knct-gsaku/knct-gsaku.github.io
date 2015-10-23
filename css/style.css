@@ -1,0 +1,136 @@
+
+.images {
+    float: left;
+    width: 45%;
+    height: 90%;
+    margin-top: 50px;
+    margin-left: 2em;
+    padding: 0;
+    display: table;
+}
+
+#Contents {
+    position: relative;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    margin-top: 0px;
+    background: #FCFCFC;
+}
+
+#Games-main {
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    max-width:820px;
+    width: 100%;
+}
+
+.Game-Table {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Contents:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.description {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 820px;
+    margin-top: 70px;
+}
+
+html, body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.top-image {
+    display: table-cell;
+    width: 100%;
+    margin: auto 0;
+    vertical-align: middle;
+}
+
+p {
+    font-family: sans-serif;
+    color: #444444;
+}
+
+h2 {
+    color: #444444;
+}
+
+.club-name {
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+
+.information {
+    background-color: #ffffff;
+    height: 10em;
+    overflow-y: scroll;
+    margin-left: 1em;
+    margin-right: 3em;
+}
+
+table {
+    display: table;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr {
+    display: table-row;
+}
+
+td {
+    display: table-cell;
+}
+
+.topics {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.welcome {
+    margin: 3em auto;
+}
+
+.hello {
+    text-align: center;
+}
+
+hr {
+    margin-right: 2em;
+}
+
+.img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.bxslider {
+    display: table-cell;
+}
