@@ -1,50 +1,72 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link type="text/css" rel="stylesheet" media="all" href="../css/style.css">
-        <link type="text/css" rel="stylesheet" media="all" href="../css/menubar.css">
-        <title>Pronama Run!! - 熊本高専ゲーム制作同好会</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>トップページ - 熊本高専ゲーム制作同好会</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+<!--        <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">-->
     </head>
-    <body id="Home">
-        <div id="MenuBar">
-            <ul>
-                <h1 class="logo"><a href="../index.html">knct-GCC</a></h1>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="../games.html">Games</a></li>
-                <div class="socialButtons">
-                    <div class="twitter-icon"><a href="https://twitter.com/knctGsaku"><img src="../images/Twitter_logo_blue.png" alt="Twitter" width="26px" height="23px"></a></div>
+    <body class="body-toppage">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">knct-GCC</a>
                 </div>
-            </ul>
-        </div>
-        <div id="Contents">
-            <div id="Games-main">
-				<div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/pronama_run.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">PURONAMA RUN!!</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="https://github.com/knct-gsaku/pronama_run/archive/master.zip">ダウンロード</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：横スクロールアクション<br><br>
-							プロ生ちゃんが走って飛ぶ！<br>
-							高スコアを目指しましょう。<br>
-							<br>
-							1年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：プロ生ちゃん（暮井 慧）<br>
-							</td>
-						</tr>
-					</table>
-				</div>
+                <div class="collapse navbar-collapse target">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="active"><a href="../games-list-mascotApp-2015.html">Game</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://twitter.com/knctgsaku" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container toppage-shadow">
+            <div id="title">
+                <h2 class="text-center">PURONAMA RUN!!</h2>
+                <p class="text-center text-muted">マスコットアプリ文化祭2015参加作品</p>
+                <div class="text-center"><button class="btn btn-success">Download</button></div>
+            </div>
+            <hr class="hr-toppage">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+                    <div>
+                        <img src="../images/pronama_run.png" alt="" class="img-responsive img-thumbnail img-center">
+                    </div>
+                    <p></p>
+                    <div class="well well-lg">
+                        <h3 class="text-center">
+                            プロ生ちゃんが走って飛ぶ！<br>高スコアを目指しましょう。
+                        </h3>
+                    </div>
+                    <h3>Information</h3>
+                    <div class="well well-lg">
+                        <div class="h4">動作環境</div>
+                        <div>Java動作環境のあるWindows</div>
+                        <div class="h4">公開日</div>
+                        <div>2016/04/06</div>
+                        <div class="h4">製作者</div>
+                        <div>非公開</div>
+                        <div class="h4">使用素材等</div>
+                        <div>フリー素材、およびオリジナル</div>
+                    </div>
+                    <div class="text-center"><button class="btn btn-success">Download</button></div>
+                </div>
             </div>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

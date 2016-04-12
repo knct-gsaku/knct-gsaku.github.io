@@ -1,55 +1,92 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link type="text/css" rel="stylesheet" media="all" href="./css/style.css">
-        <link type="text/css" rel="stylesheet" media="all" href="./css/menubar.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>トップページ - 熊本高専ゲーム制作同好会</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+<!--        <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">-->
     </head>
-    <body id="Home">
-        <div id="MenuBar">
-            <ul>
-                <h1 class="logo"><a href="index.html">knct-GCC</a></h1>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="./games.html">Games</a></li>
-                <div class="socialButtons">
-                    <div class="twitter-icon"><a href="https://twitter.com/knctGsaku"><img src="images/Twitter_logo_blue.png" alt="Twitter" width="26px" height="23px"></a></div>
+    <body class="body-toppage">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">knct-GCC</a>
                 </div>
-            </ul>
-        </div>
-        <div id="Contents">
-            <div class="description">
-                <h2 class="club-name">ゲーム制作同好会</h2>
-                <hr color="#47c9af" style="margin-right:12em;margin-left:12em;">
-                <div class="welcome">
-                    <p class="hello">Welcome!<br>ここは国立熊本高等専門学校熊本キャンパス<br>ゲーム制作同好会のホームページです。</p>
+                <div class="collapse navbar-collapse target">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="./game-index.html">Game</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://twitter.com/knctgsaku" target="_blank">Twitter</a></li>
+                    </ul>
                 </div>
-                <h3 class="topics">News</h3>
-                <hr color="#47c9af">
-                <div class="information">
-                    <table>
+            </div>
+        </nav>
+
+        <div class="container toppage-shadow">
+            <div id="title">
+                <h1 class="text-center">ゲーム制作同好会</h1>
+                <hr class="hr-toppage" width="400px">
+                <p class="text-muted text-center">熊本高等専門学校<br>熊本キャンパス</p>
+            </div>
+            <p><br></p>
+            <img class="img-responsive img-center" src="./images/prokuzi.png" alt="">
+            <p><br></p>
+            <div class="row">
+                <div id="news" class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+                    <h4 class="text-center">News</h4>
+                    <hr class="hr-toppage">
+                    <table class="table table-striped">
                         <tbody>
-                            <tr><td>2015/12/30</td><td>マスコットアプリ文化祭2015 参加作品群掲載</td></tr>
-                            <tr><td>2015/10/24</td><td>熊本高専電波祭出展</td></tr>
-                            <tr><td>2015/10/23</td><td>ホームページ開設</td></tr>
-                            <tr><td>2015/08/31</td><td>Unityインターハイ2015 作品応募</td></tr>
-                            <tr><td>2015/05/10</td><td>ニコニコ自作ゲームフェス5 作品応募</td></tr>
-                            <tr><td>2014/12/11</td><td>マスコットアプリ文化祭 作品応募</td></tr>
-                            <tr><td>2014/04/01</td><td>ゲーム制作同好会発足</td></tr>
+                            <tr><td class="text-center">2015/12/30</td><td>マスコットアプリ文化祭2015 参加作品群掲載</td></tr>
+                            <tr><td class="text-center">2015/10/24</td><td>熊本高専電波祭出展</td></tr>
+                            <tr><td class="text-center">2015/10/23</td><td>ホームページ開設</td></tr>
+                            <tr><td class="text-center">2015/08/31</td><td>Unityインターハイ2015 作品応募</td></tr>
+                            <tr><td class="text-center">2015/05/10</td><td>ニコニコ自作ゲームフェス5 作品応募</td></tr>
+                            <tr><td class="text-center">2014/12/11</td><td>マスコットアプリ文化祭 作品応募</td></tr>
+                            <tr><td class="text-center">2014/04/01</td><td>ゲーム制作同好会発足</td></tr>
                         </tbody>
                     </table>
                 </div>
-                <h3 class="topics">Contact</h3>
-                <hr color="#47c9af">
-                <div class="contact">
-                    <p>Mail: gsaku2015@gmail.com<br>Twitter: @knctGsaku</p>
+                <div id="contacts" class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+                    <h4 class="text-center">Contact</h4>
+                    <hr class="hr-toppage">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="panel panel-success">
+                                <div class="panel-heading text-center">
+                                    Mail
+                                </div>
+                                <div class="panel-body text-center">
+                                    gsaku2015@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel panel-success">
+                                <div class="panel-heading text-center">
+                                    Twitter
+                                </div>
+                                <div class="panel-body text-center">
+                                    @knct-Gsaku
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="Footer">
-            <div id="footer" class="row"></div>
-            <div id="about" class="row"></div>
-        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

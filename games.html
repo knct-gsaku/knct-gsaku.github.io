@@ -1,404 +1,115 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link type="text/css" rel="stylesheet" media="all" href="./css/style.css">
-        <link type="text/css" rel="stylesheet" media="all" href="./css/menubar.css">
-        <title>ゲーム紹介 - 熊本高専ゲーム制作同好会</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>トップページ - 熊本高専ゲーム制作同好会</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+<!--        <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">-->
     </head>
-    <body id="Games">
-        <div id="MenuBar">
-            <ul>
-                <h1 class="logo"><a href="index.html">knct-GCC</a></h1>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="./games.html">Games</a></li>
-                <div class="socialButtons">
-                    <div class="twitter-icon"><a href="https://twitter.com/knctGsaku"><img src="images/Twitter_logo_blue.png" alt="Twitter" width="26px" height="23px"></a></div>
+    <body class="body-toppage">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">knct-GCC</a>
                 </div>
-            </ul>
-        </div>
-        <div id="Contents">
-            <div id="Games-main">
-				<div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="images/amayadori.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">アマヤドリ</td>
-						</tr>
-						<tr>
-							<td height="30px">ダウンロードリンク(なし)</td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：弾幕<br>
-							3人のキャラクター、3つのステージで構成される弾幕ゲームです。<br>
-							多少重いですがマルチプレイにも対応し、平成27年度電波祭の目玉ゲームでした。<br>
-							2年生が担当。<br>
-							<br>
-							平成27年度電波祭 出展
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/prokuzi.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">プロ生ちゃんのOMIKUZI</td>
-						</tr>
-						<tr>
-                            <td height="30px"><a href="games/prokuzi.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：おみくじ<br><br>
-							プロ生ちゃんが君の運勢を占ってくれるよ！<br>
-							結果をTwitterに投稿することもできるよ！<br>
-							<br>
-							3年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：プロ生ちゃん（暮井 慧）<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/minesweeper.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">温泉を見つけるんっちゃ！！-MINESWEEPER-</td>
-						</tr>
-						<tr>
-                            <td height="30px"><a href="games/minesweeper.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：マインスイーパー<br><br>
-							9×9マス、爆弾10個のマインスイーパーです。箱を開ける動作のみの実装なので、爆弾のところをクリック(右クリックでもgameoverになります)しないようにご注意を…<br>
-							<br>
-							2年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：鶴見湯香<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/campuslife_pronama.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">Campus Life!! ver.Pronama</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/campuslife_pronama.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：連打弾消し<br><br>
-							電波祭で大人気だった、Campus lifeがキャラクターを交えて新作が登場！<br>
-							前作に新機能を追加！点数表示や初心者でも安心の遊び方説明画面の追加。プロ生ちゃんが様々な表情を見せながら赤点・青点を消していくかわいい機能も。ひどくなったとも言えるこのゲーム！過酷な現実の支えにしてください。<br>
-							<br>
-							1年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：プロ生ちゃん（暮井 慧）<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/zunda_rally.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">ずんだラリー</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/zunda_rally.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：ホッケー<br><br>
-							ずんだ餅でラリーをするゲームです。<br>
-							きれいな画面を目指しました。<br>
-							<br>
-							1年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：東北ずん子<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/pronama_run.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">PURONAMA RUN!!</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/pronama_run.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：横スクロールアクション<br><br>
-							プロ生ちゃんが走って飛ぶ！<br>
-							高スコアを目指しましょう。<br>
-							<br>
-							1年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：プロ生ちゃん（暮井 慧）<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/zunda_arrow.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">ずん子のずんだアロー!!</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/zunda_arrow.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：横方向シューティング<br><br>
-							「ずん子のずんだアロ―!!」は敵と敵の餅を避ける横シューティングゲームです。<br>
-							敵と敵の餅を「ずんだもち」にしてスコアを稼ごう！<br>
-							<br>
-							3年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：東北ずん子<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/game_search.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">Search!東北ずん子</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/game_search.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：宝探し(？)<br><br>
-							ずん子ちゃんたちを探すゲームです。<br>
-							難易度激易です。<br>
-							<br>
-							2年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：東北ずん子/東北イタコ/東北きりたん<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/flappyhakka.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">フラッピーハッカ</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/flappyhakka.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：フラッピーバードリスペクト<br><br>
-							ハッカドールが土管をくぐり抜けていくゲームだよ。<br>
-							Twitterで共有してスコアを競おう！<br>
-							<br>
-							2年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：ハッカドール1号/ハッカドール2号/ハッカドール3号<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/mascot_minigame.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">マスコットミニゲーム</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/mascot_minigame.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：ミニゲーム集<br><br>
-							"ずんだ餅以外の餅は餅じゃない！餅をずんだ餅に変えちゃうゲーム"<br>
-							"プロ生ちゃんのリクエスト通りに切れるかな？パイナップルを綺麗に切るゲーム"<br>
-							の2つ！<br>
-							<br>
-							2年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：東北ずん子/プロ生ちゃん（暮井 慧）<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="../images/zunpyon.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">zunpyon</td>
-						</tr>
-						<tr>
-							<td height="30px"><a href="games/zunpyon.html">個別ページ</a></td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：縦スクロールアクション<br><br>
-							初めてゲームを作りました。マウスだけで操作できます。<br>
-							至らない部分があると思いますが宜しくお願いします。<br>
-							<br>
-							2年生が担当。<br>
-							マスコットアプリ文化祭2015 参加。<br>
-							登場キャラクター：東北ずん子<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="images/yokero.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">Yokero!</td>
-						</tr>
-						<tr>
-							<td height="30px">ダウンロードリンク(なし)</td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：弾避け<br>
-							画面端4方向から飛んで来る弾をひたすら避け続けるゲームです。<br>
-							弾の綺麗さを重視しましたが、Difficultモードの難しさはハマること間違いなし。<br>
-							3年生が担当。<br>
-							<br>
-							平成27年度電波祭 出展
-							</td>
-						</tr>
-					</table>
-				</div>
-                <div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="images/billiards.PNG" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">Billiards</td>
-						</tr>
-						<tr>
-							<td height="30px">ダウンロードリンク(なし)</td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：ビリヤード<br>
-							ビリヤードを再現したゲームです。<br>
-							ナインボールのルールで点数を競います。<br>
-							2年生が担当。<br>
-							<br>
-							平成27年度電波祭 出展
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="images/campuslife.PNG" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">Campus Life!!</td>
-						</tr>
-						<tr>
-							<td height="30px">ダウンロードリンク(なし)</td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：連打弾消し<br>
-							高専生の一年間で赤点、青点を消すゲームです。<br>
-							赤点や青点のテストを模した円を連打して、進級を目指します。<br>
-							1年生が担当。<br>
-							<br>
-							平成27年度電波祭 出展
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="images/hockeyrally.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">Hockey Rally</td>
-						</tr>
-						<tr>
-							<td height="30px">ダウンロードリンク(なし)</td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：ホッケー<br>
-							ホッケーをするゲームです。<br>
-							必ず返す敵を相手に、何回ラリーが続いたかを競います。<br>
-							1年生が担当。<br>
-							<br>
-							平成27年度電波祭 出展
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="Game-Table">
-					<table border="1px" width = "100%">
-						<tr>
-							<td rowspan="3" width="50%">
-								<img src="images/avoid.png" alt="紹介画像" width="100%">
-							</td>
-							<td height="30px" width="50%">Avoid</td>
-						</tr>
-						<tr>
-							<td height="30px">ダウンロードリンク(なし)</td>
-						</tr>
-						<tr>
-							<td height="auto" width="50%">
-							ジャンル：某有名ゲームクローン<br>
-							某有名ゲームに近いゲームです。<br>
-							狭い土管をくぐり抜けた回数を競います。<br>
-							1年生が担当。<br>
-							<br>
-							平成27年度電波祭 出展
-							</td>
-						</tr>
-					</table>
-				</div>
+                <div class="collapse navbar-collapse target">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="">Game</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container toppage-shadow">
+            <div class="row">
+                <div id="game-tables" class="col-sm-offset-2 col-sm-8">
+                    <div class="div-img-tables">
+                        <div class="col-sm-6 div-img">
+                            <img src="./images/prokuzi.png" alt="" class="img-responsive img-centering">
+                        </div>
+                        <div class="col-sm-6">
+                            <table class="table">
+                                <thead>
+                                    <tr><td width="50%"><p class="h4"><strong>
+                                        プロ生ちゃんのOMIKUZI
+                                    </strong></p></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>ジャンル：おみくじ<br><br>
+                                        プロ生ちゃんが君の運勢を占ってくれるよ！<br>
+                                        結果をTwitterに投稿することもできるよ！<br>
+                                        <br>
+                                        3年生が担当。<br>
+                                        マスコットアプリ文化祭2015 参加。<br>
+                                        登場キャラクター：プロ生ちゃん（暮井 慧）<br></td></tr>
+                                    <tr><td><button class="btn btn-success">Download</button></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr class="hr-toppage">
+                    <div class="div-img-tables">
+                        <div class="div-img col-sm-6">
+                            <img src="./images/prokuzi.png" alt="" class="img-responsive img-centering">
+                        </div>
+                        <div class="col-sm-6">
+                            <table class="table">
+                                <thead>
+                                    <tr><td width="50%"><p class="h4"><strong>プロ生ちゃんのOMIKUZI</strong></p></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>ジャンル：おみくじ<br><br>
+                                        プロ生ちゃんが君の運勢を占ってくれるよ！<br>
+                                        結果をTwitterに投稿することもできるよ！<br>
+                                        <br>
+                                        3年生が担当。<br>
+                                        マスコットアプリ文化祭2015 参加。<br>
+                                        登場キャラクター：プロ生ちゃん（暮井 慧）<br></td></tr>
+                                    <tr><td><button class="btn btn-success">Download</button></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr class="hr-toppage">
+                    <div class="div-img-tables">
+                        <div class="div-img col-sm-6">
+                            <img src="./images/prokuzi.png" alt="" class="img-responsive img-centering">
+                        </div>
+                        <div class="col-sm-6">
+                            <table class="table">
+                                <thead>
+                                    <tr><td width="50%"><p class="h4"><strong>プロ生ちゃんのOMIKUZI</strong></p></td></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>ジャンル：おみくじ<br><br>
+                                        プロ生ちゃんが君の運勢を占ってくれるよ！<br>
+                                        結果をTwitterに投稿することもできるよ！<br>
+                                        <br>
+                                        3年生が担当。<br>
+                                        マスコットアプリ文化祭2015 参加。<br>
+                                        登場キャラクター：プロ生ちゃん（暮井 慧）<br></td></tr>
+                                    <tr><td><button class="btn btn-success">Download</button></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
